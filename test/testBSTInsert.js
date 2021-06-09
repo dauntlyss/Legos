@@ -13,5 +13,12 @@ describe('testBST', function() {
       tree.insert(brick0);
       assert.equal(tree.root.data, brick0);
     });
+
+    it('assert brick0 left is null', function() {
+      var brick0 = new Brick(1, "red");
+      var tree = new BST();
+      tree.insert(brick0);
+      assert.equal(tree.root.left, null);
+    })
   });
 });
