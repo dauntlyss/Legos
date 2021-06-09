@@ -28,7 +28,7 @@ function insert(data) {
     var parent;
     while (true) {
       parent = current;
-      if (data.size < current.data) {
+      if (data.size < current.data.size) {
         current = current.left;
         if (current == null) {
           parent.left = n;
