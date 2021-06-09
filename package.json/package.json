@@ -1,0 +1,14 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Legos project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Alyssa Harris",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.0.0"
+  }
+}
