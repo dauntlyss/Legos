@@ -22,7 +22,7 @@ function LegoPile() {
   this.hasBrick = hasBrick;
   this.findBinaryTree = findBinaryTree;
   this.findBrick = findBrick;
-
+  this.legoPileCount = legoPileCount;
 };
 
 /* Inserts a brick into the appropriate colors's BST*/
@@ -74,5 +74,5 @@ function legoPileCount() {
   for (var key in this.datastore) {
     count += this.datastore[key].bstCount();
   }
-  return counter;
+  return count;
 }
