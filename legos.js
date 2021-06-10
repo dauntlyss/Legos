@@ -67,3 +67,12 @@ function findBrick(size, tree) {
     }
   }
 }
+
+/*Returns the sum total of Brick objects in the lego pile*/
+function legoPileCount() {
+  var count = 0;
+  for (var key in this.datastore) {
+    count += this.datastore[key].bstCount();
+  }
+  return counter;
+}
