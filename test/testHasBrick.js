@@ -14,6 +14,15 @@ describe('test if lego pile has brick', function() {
     });
   });
 
+  describe('find brick', function() {
+    it('assert one brick is not found', function() {
+      var brick0 = new Brick(30, "blue");
+      var pile = new LegoPile();
+
+      assert.equal(pile.hasBrick(30, "blue"), false);
+    });
+  });
+
   describe('find two bricks in two different trees', function() {
     it('assert the first bricks inserted into trees are found', function() {
       var brick0 = new Brick(30, "blue");
