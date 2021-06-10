@@ -68,5 +68,5 @@ function countSubtree(node) {
   if (node.right != null) {
     count += countSubtree(node.right);
   }
-  return counter;
+  return count;
 }
